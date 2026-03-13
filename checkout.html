@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Durenan | Checkout</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Bebas+Neue&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="top-stripe"></div>
+
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo">
+          <span class="navbar__logo-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"
+              />
+              <path d="M7 16v6" />
+              <path d="M13 19v3" />
+              <path
+                d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"
+              />
+            </svg>
+          </span>
+          <span class="navbar__logo-text">Durenan.</span>
+        </a>
+
+        <div></div>
+
+        <a href="#" class="navbar__cart">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="8" cy="21" r="1" />
+            <circle cx="19" cy="21" r="1" />
+            <path
+              d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+            />
+          </svg>
+          Keranjang
+          <span class="navbar__cart-badge">1</span>
+        </a>
+      </div>
+    </nav>
+
+    <main class="checkout">
+      <div class="checkout__inner">
+        <!-- header -->
+        <div class="checkout__heading">
+          <h1 class="checkout__title">
+            HAMPIR<br />
+            <span class="checkout__title-highlight">SAMPE NIH.</span>
+          </h1>
+        </div>
+
+        <div class="checkout__layout">
+          <!-- form -->
+          <div class="checkout__form">
+            <!-- product -->
+            <div class="checkout-card">
+              <div class="checkout-card__header">
+                <span class="checkout-card__number">01</span>
+                <h2 class="checkout-card__title">Produk Lo</h2>
+              </div>
+
+              <div class="product-preview">
+                <div class="product-preview__image">
+                  <img src="assets/musangking.webp" alt="Musang King" />
+                </div>
+                <div class="product-preview__info">
+                  <p class="product-preview__category">
+                    Premium · Pahang, Malaysia
+                  </p>
+                  <h3 class="product-preview__name">Musang King</h3>
+                  <p class="product-preview__subtitle">Hits, No Debat.</p>
+                  <p class="product-preview__price-mobile">
+                    350k<span class="product-preview__price-unit">/kg</span>
+                  </p>
+                </div>
+                <div class="product-preview__price-desktop">
+                  <p class="product-preview__price">
+                    350k<span class="product-preview__price-unit">/kg</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="qty">
+                <div class="qty__label">
+                  <p class="qty__title">Jumlah (kg)</p>
+                  <p class="qty__hint">Min. 1 kg, maks. 20 kg</p>
+                </div>
+                <div class="qty__controls">
+                  <button class="qty__btn">−</button>
+                  <span class="qty__value">2</span>
+                  <button class="qty__btn">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- form fields -->
+            <div class="checkout-card">
+              <div class="checkout-card__header">
+                <span class="checkout-card__number">02</span>
+                <h2 class="checkout-card__title">Data Lo</h2>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-field">
+                  <label class="form-label">Nama Lengkap</label>
+                  <input
+                    type="text"
+                    placeholder="e.g. Reza Perkasa"
+                    class="form-input"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label">No. WhatsApp</label>
+                  <input
+                    type="tel"
+                    placeholder="e.g. 081234567890"
+                    class="form-input"
+                  />
+                </div>
+
+                <div class="form-field form-field--full">
+                  <label class="form-label">Alamat Lengkap</label>
+                  <input
+                    type="text"
+                    placeholder="Jl. Raya No. 10, RT/RW, Kelurahan, Kecamatan"
+                    class="form-input"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label">Kota / Kabupaten</label>
+                  <input
+                    type="text"
+                    placeholder="e.g. Malang"
+                    class="form-input"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label">Kode Pos</label>
+                  <input
+                    type="text"
+                    placeholder="e.g. 65141"
+                    class="form-input"
+                  />
+                </div>
+
+                <div class="form-field form-field--full">
+                  <label class="form-label">
+                    Catatan buat Kurir
+                    <span class="form-label__optional">(opsional)</span>
+                  </label>
+                  <textarea
+                    placeholder="e.g. Rumah pager hitam, samping warung. Jangan dibunyiin bel."
+                    rows="2"
+                    class="form-input form-input--textarea"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+
+            <!-- payment method -->
+            <div class="checkout-card">
+              <div class="checkout-card__header">
+                <span class="checkout-card__number">03</span>
+                <h2 class="checkout-card__title">Bayarnya Gimana?</h2>
+              </div>
+
+              <div class="payment-options">
+                <div class="pay-option">
+                  <input type="radio" name="payment" id="cod" />
+                  <label for="cod">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect width="20" height="12" x="2" y="6" rx="2" />
+                      <circle cx="12" cy="12" r="2" />
+                      <path d="M6 12h.01M18 12h.01" />
+                    </svg>
+                    <div>
+                      <p>COD — Bayar di Tempat</p>
+                      <p class="pay-option__desc">
+                        Bayar pas kurir dateng, santuy.
+                      </p>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="pay-option">
+                  <input type="radio" name="payment" id="online" checked />
+                  <label for="online">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect width="20" height="14" x="2" y="5" rx="2" />
+                      <line x1="2" x2="22" y1="10" y2="10" />
+                    </svg>
+                    <div>
+                      <p>Bayar Online</p>
+                      <p class="pay-option__desc">
+                        Transfer, kartu kredit, GoPay, OVO, DANA, dll.
+                      </p>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- summary -->
+          <div class="checkout__summary">
+            <div class="summary-card">
+              <div class="summary-card__header">
+                <h2 class="summary-card__title">Ringkasan Order</h2>
+              </div>
+
+              <div class="summary-card__body">
+                <div class="summary-item">
+                  <div>
+                    <p class="summary-item__name">Musang King</p>
+                    <p class="summary-item__qty">2 kg × 350K</p>
+                  </div>
+                  <p class="summary-item__subtotal">700K</p>
+                </div>
+
+                <div class="summary-shipping">
+                  <div class="summary-shipping__label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3"
+                      />
+                      <rect x="9" y="11" width="14" height="10" rx="1" />
+                      <circle cx="12" cy="21" r="1" />
+                      <circle cx="20" cy="21" r="1" />
+                    </svg>
+                    Ongkos Kirim
+                  </div>
+                  <p class="summary-shipping__cost">25K</p>
+                </div>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-total">
+                  <p class="summary-total__label">Total</p>
+                  <p class="summary-total__value">725k</p>
+                </div>
+
+                <button class="btn btn--confirm">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <path d="m9 11 3 3L22 4" />
+                  </svg>
+                  Konfirmasi Order
+                </button>
+
+                <p class="summary-card__disclaimer">
+                  Dengan order, lo setuju sama syarat & ketentuan Durenan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <div class="footer-stripe"></div>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <div class="footer__logo">
+              <span class="footer__logo-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"
+                  />
+                  <path d="M7 16v6" />
+                  <path d="M13 19v3" />
+                  <path
+                    d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"
+                  />
+                </svg>
+              </span>
+              <h2 class="footer__logo-text">Durenan.</h2>
+            </div>
+            <p class="footer__tagline">
+              Tempat nongkrong para durian lovers. Langsung dari kebun, gak pake
+              ribet.
+            </p>
+          </div>
+
+          <div class="footer__links">
+            <h4 class="footer__heading">Tautan Cepat</h4>
+            <ul class="footer__nav">
+              <li><a href="#">Katalog</a></li>
+              <li><a href="#">Cara Belinya</a></li>
+              <li><a href="#">Tentang Kami</a></li>
+              <li><a href="#">Kontak</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__contact">
+            <h4 class="footer__heading">Hubungi Kami</h4>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+                duren@durenan.com
+              </li>
+              <li class="footer__contact-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.39 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                0812-3456-7890
+              </li>
+              <li class="footer__contact-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Malang, Jawa Timur
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">
+          © 2026 Durenan. Duri boleh tajam, harga tetap ramah.
+        </p>
+      </div>
+    </footer>
+    <div class="bottom-stripe"></div>
+  </body>
+</html>

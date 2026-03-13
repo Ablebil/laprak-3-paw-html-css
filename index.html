@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Durenan | Durian Terenak, No Debat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Bebas+Neue&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="top-stripe"></div>
+
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar__inner">
+        <a href="#" class="navbar__logo">
+          <span class="navbar__logo-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"
+              />
+              <path d="M7 16v6" />
+              <path d="M13 19v3" />
+              <path
+                d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"
+              />
+            </svg>
+          </span>
+          <span class="navbar__logo-text">Durenan.</span>
+        </a>
+
+        <div class="navbar__links">
+          <a href="#" class="navbar__link navbar__link--active">Katalog</a>
+          <a href="#" class="navbar__link">Tentang Kami</a>
+          <a href="#" class="navbar__link">Kontak</a>
+        </div>
+
+        <a href="#" class="navbar__cart">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="8" cy="21" r="1" />
+            <circle cx="19" cy="21" r="1" />
+            <path
+              d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+            />
+          </svg>
+          Keranjang
+          <span class="navbar__cart-badge">0</span>
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- hero -->
+      <section class="hero">
+        <div class="hero__inner">
+          <div class="hero__text">
+            <h1 class="hero__heading">
+              LEGIT.<br />
+              <span class="hero__heading-highlight">MANIS.</span><br />
+              <span class="hero__heading-outline">LUMER.</span>
+            </h1>
+
+            <div class="hero__cta">
+              <a href="#products" class="btn btn--primary">Gas Sekarang →</a>
+              <a href="#" class="btn btn--secondary">Gimana Belinya?</a>
+            </div>
+          </div>
+
+          <div class="hero__image">
+            <div class="hero__image-frame">
+              <img
+                src="assets/hero.webp"
+                alt="Hero durian"
+                class="hero__image-img"
+              />
+            </div>
+            <div class="hero__tag">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              4.9 · 2.400+ udah cobain
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- products -->
+      <section id="products" class="products">
+        <!-- header -->
+        <div class="products__header">
+          <h2 class="products__heading">
+            CARI<br />
+            <span class="products__heading-highlight">DURIAN LO</span>
+          </h2>
+
+          <div class="filter-group">
+            <button class="filter-btn filter-btn--active">Semua</button>
+            <button class="filter-btn">Impor</button>
+            <button class="filter-btn">Lokal</button>
+            <button class="filter-btn">Premium</button>
+          </div>
+        </div>
+
+        <!-- grid -->
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="card-image card-image--yolk">
+              <img
+                src="assets/musangking.webp"
+                alt="Musang King"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <p class="card-category">Premium · Pahang, Malaysia</p>
+              <h3 class="card-name">
+                Musang King<br />
+                <span class="card-subtitle">Hits, No Debat.</span>
+              </h3>
+              <p class="card-desc">
+                Pahit manis yang bikin lo nagih. Teksturnya kremis abis,
+                aromanya nusuk. Sekali nyobain, susah move on.
+              </p>
+              <div class="card-footer">
+                <p class="card-price">
+                  350k<span class="card-price-unit">/kg</span>
+                </p>
+                <a href="checkout.html" class="btn-buy">Beli →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="card-image card-image--lime">
+              <img
+                src="assets/baworsuper.webp"
+                alt="Bawor Super"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <p class="card-category">Lokal · Banyumas, Indonesia</p>
+              <h3 class="card-name">
+                Bawor Super<br />
+                <span class="card-subtitle"
+                  >Gede, Tebel, Gak Nyusahin Dompet.</span
+                >
+              </h3>
+              <p class="card-desc">
+                Dari Banyumas, ukurannya gede banget, dagingnya kuning tebel.
+                Rasanya manis gurih yang bikin lo nambah terus.
+              </p>
+              <div class="card-footer">
+                <p class="card-price">
+                  120k<span class="card-price-unit">/kg</span>
+                </p>
+                <a href="checkout.html" class="btn-buy">Beli →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="card-image card-image--ink">
+              <img
+                src="assets/ochee.webp"
+                alt="Ochee Black Thorn"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <p class="card-category">Premium · Penang, Malaysia</p>
+              <h3 class="card-name">
+                Ochee<br />
+                <span class="card-subtitle">Yang Punya Flex Material.</span>
+              </h3>
+              <p class="card-desc">
+                Langka, mahal, dan worth it banget. Manisnya intens tapi baunya
+                gak se-nusuk yang lain. Cocok buat lo yang mau flex.
+              </p>
+              <div class="card-footer">
+                <p class="card-price">
+                  450k<span class="card-price-unit">/kg</span>
+                </p>
+                <a href="checkout.html" class="btn-buy">Beli →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="card-image card-image--yolk">
+              <img src="assets/montong.webp" alt="Monthong" class="card-img" />
+            </div>
+            <div class="card-body">
+              <p class="card-category">Impor · Chanthaburi, Thailand</p>
+              <h3 class="card-name">
+                Monthong<br />
+                <span class="card-subtitle">Starter Pack Durian Lo.</span>
+              </h3>
+              <p class="card-desc">
+                Baru mau nyobain durian? Ini starting point lo. Manis poll,
+                dagingnya tebel, bijinya kecil. Literally gak ada yang bisa
+                nolak.
+              </p>
+              <div class="card-footer">
+                <p class="card-price">
+                  80k<span class="card-price-unit">/kg</span>
+                </p>
+                <a href="checkout.html" class="btn-buy">Beli →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="card-image card-image--red">
+              <img
+                src="assets/merah.webp"
+                alt="Durian Merah"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <p class="card-category">Premium · Banyuwangi, Indonesia</p>
+              <h3 class="card-name">
+                Durian Merah<br />
+                <span class="card-subtitle">Plot Twist Dunia Durian.</span>
+              </h3>
+              <p class="card-desc">
+                Dagingnya merah, rasanya beda dimensi. Manis gurih yang
+                literally bikin lo speechless. Rare banget, jangan sampe lo
+                skip.
+              </p>
+              <div class="card-footer">
+                <p class="card-price">
+                  135k<span class="card-price-unit">/kg</span>
+                </p>
+                <a href="checkout.html" class="btn-buy">Beli →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="card-image card-image--lime">
+              <img
+                src="assets/petruk.webp"
+                alt="Durian Petruk"
+                class="card-img"
+              />
+            </div>
+            <div class="card-body">
+              <p class="card-category">Lokal · Jepara, Indonesia</p>
+              <h3 class="card-name">
+                Durian Petruk<br />
+                <span class="card-subtitle">Budget Friendly, No Skip.</span>
+              </h3>
+              <p class="card-desc">
+                Harganya paling ramah di kantong tapi rasanya gak kalah.
+                Manis-pahit yang balance. Recommended buat yang lagi agak bokek.
+              </p>
+              <div class="card-footer">
+                <p class="card-price">
+                  45k<span class="card-price-unit">/kg</span>
+                </p>
+                <a href="checkout.html" class="btn-buy">Beli →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- banner -->
+      <section class="promo">
+        <div class="promo__inner">
+          <div class="promo__bg-icon" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="200"
+              height="200"
+              viewBox="0 0 24 24"
+              fill="white"
+              stroke="white"
+              stroke-width="1"
+            >
+              <path
+                d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"
+              />
+              <circle cx="7.5" cy="7.5" r="1.5" />
+            </svg>
+          </div>
+          <div class="promo__text">
+            <p class="promo__label">Gak Pake Lama</p>
+            <h3 class="promo__heading">BELI 5KG,<br />GRATIS 1KG!</h3>
+            <p class="promo__desc">
+              Berlaku buat semua varian. Masukin kode
+              <span class="promo__code">DURIAN5KG</span>
+              pas checkout, beres.
+            </p>
+          </div>
+          <div class="promo__action">
+            <a href="checkout.html" class="btn btn--promo">Ambil Sekarang →</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <div class="footer-stripe"></div>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <div class="footer__logo">
+              <span class="footer__logo-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"
+                  />
+                  <path d="M7 16v6" />
+                  <path d="M13 19v3" />
+                  <path
+                    d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"
+                  />
+                </svg>
+              </span>
+              <h2 class="footer__logo-text">Durenan.</h2>
+            </div>
+            <p class="footer__tagline">
+              Tempat nongkrong para durian lovers. Langsung dari kebun, gak pake
+              ribet.
+            </p>
+          </div>
+
+          <div class="footer__links">
+            <h4 class="footer__heading">Tautan Cepat</h4>
+            <ul class="footer__nav">
+              <li><a href="#">Katalog</a></li>
+              <li><a href="#">Cara Belinya</a></li>
+              <li><a href="#">Tentang Kami</a></li>
+              <li><a href="#">Kontak</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__contact">
+            <h4 class="footer__heading">Hubungi Kami</h4>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+                duren@durenan.com
+              </li>
+              <li class="footer__contact-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.39 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                0812-3456-7890
+              </li>
+              <li class="footer__contact-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Malang, Jawa Timur
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">
+          © 2026 Durenan. Duri boleh tajam, harga tetap ramah.
+        </p>
+      </div>
+    </footer>
+    <div class="bottom-stripe"></div>
+  </body>
+</html>
